@@ -1,0 +1,15 @@
+version: "3"
+services:
+  data_science:
+    build:
+     context: ./envs
+     dockerfile: Dockerfile
+    image: data_science:1.0
+    container_name: data_science
+    volumes:
+      - ".:/home/data_science"
+    ports:
+      - "9999:9999"
+    privileged: true
+    restart: unless-stopped
+    command: jupyter notebook

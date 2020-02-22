@@ -1,0 +1,29 @@
+name: base
+channels:
+  - conda-forge
+  - defaults
+dependencies:
+  - altair
+  - conda
+  - feather-format
+  - ipykernel
+  - ipyleaflet
+  - ipython
+  - jupyterhub
+  - jupyterlab
+  - missingno
+  - notebook
+  - pip
+  - plotly
+  - python
+  - pyyaml
+  - readline
+  - requests
+  - scikit-learn
+  - seaborn
+  - vega_datasets
+  - pip:
+    - japanize-matplotlib
+    - squarify
+prefix: /opt/conda
+
