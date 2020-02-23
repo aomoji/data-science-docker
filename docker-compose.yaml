@@ -9,7 +9,7 @@ services:
     volumes:
       - ".:/home/data_science"
     ports:
-      - "9999:9999"
+      - "9999:8888"
     privileged: true
     restart: unless-stopped
     command: jupyter notebook

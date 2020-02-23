@@ -57,5 +57,5 @@ RUN $CONDA_DIR/bin/conda env update -f /tmp/base.yaml && \
     rm /tmp/base.yaml && \
     conda clean --all -f -y
 
-EXPOSE 9999
+EXPOSE 8888
 ENTRYPOINT [ "/usr/bin/tini", "--" ]
