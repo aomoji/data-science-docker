@@ -30,5 +30,5 @@ sudo wget \
     && sudo chmod +x /usr/local/bin/docker-compose \
     && sudo wget \
         --output-document=/etc/bash_completion.d/docker-compose \
-        "https://raw.githubusercontent.com/docker/compose/$(docker-compose version --short)/contrib/completion/bash/docker-compose" \
+        "https://raw.githubusercontent.com/docker/compose/$(sudo docker-compose version --short)/contrib/completion/bash/docker-compose" \
     && printf '\nDocker Compose installed successfully\n\n'
